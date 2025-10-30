@@ -1,28 +1,50 @@
-# 🗨️ Forum Module (User Post System)
+MERN Voting System
 
-This module allows users to create posts, comment on others’ posts, and react using emojis or simple reactions — similar to Reddit or social media discussions.  
-Admins or authenticated users can manage content via secure routes.
+A full-stack, real-time voting application built with the MERN stack (MongoDB, Express.js, React.js, Node.js). This system allows users to create polls, vote on existing polls, and see results updated live.
 
----
+Features
 
-## 🚀 Features
+User Authentication: Secure user registration and login using JSON Web Tokens (JWT).
 
-### 📝 Posts
-- Users can **create** posts with a title and content.
-- All posts are fetched with user info and timestamps.
-- Posts are sorted by creation time (latest first).
+Poll Creation: Authenticated users can create new polls with multiple options.
 
-### 💬 Comments
-- Users can **comment** on posts.
-- Each comment is linked to a post and includes commenter info.
-- Comments are retrieved per post.
+Voting: Users can cast one vote per poll.
 
-### ❤️ Reactions
-- Users can **react** to posts (like, love, emoji, etc.).
-- A user can update their reaction anytime.
-- Reactions are stored as objects in each post document.
+Real-time Results: Poll results are updated instantly for all connected clients using WebSockets (e.g., via Socket.io).
 
----
+Poll Management: Users can view and delete polls they have created.
 
-## 📂 Folder Structure
+Responsive Design: A clean, mobile-first UI built with React.
+
+Tech Stack
+
+This project is built on the MERN stack:
+
+Backend:
+
+Node.js: JavaScript runtime environment
+
+Express.js: Web framework for Node.js
+
+MongoDB: NoSQL database for storing polls and user data
+
+Mongoose: Object Data Modeling (ODM) library for MongoDB
+
+JSON Web Token (JWT): For secure user authentication
+
+Socket.io: For real-time, bi-directional event-based communication
+
+bcrypt.js: For hashing user passwords
+
+Frontend:
+
+React.js: A JavaScript library for building user interfaces
+
+React Router: For client-side routing
+
+Axios: Promise-based HTTP client for making API requests
+
+Socket.io Client: To connect to the real-time backend
+
+Tailwind CSS / Chakra UI: (Choose your preferred UI library) For styling components
 
